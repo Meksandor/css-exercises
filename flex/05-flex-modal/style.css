@@ -1,6 +1,8 @@
+/*Completed with no problem my code is different than the solution but the both have the same outlook*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -13,13 +15,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+
+  flex-shrink: 1;
+  padding: 20px;
+
 }
 
 .icon {
@@ -33,6 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +60,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  justify-self: flex-end;
 }
 
 button {
@@ -66,4 +79,29 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.parag {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+}
+
+.twobutton {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.headerandclose {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
 }

@@ -1,5 +1,15 @@
+/*Completed*/
+/*Only
+- The items are only 200px wide and the text wraps.
+But I did this width: 200px; instead max-width: 200px;
+and
+- All items are centered on the page (horizontally, not vertically).
+But I did this justify-content: space-around; instead ojustify-content: center;
+*/
+
 body {
   font-family: 'Courier New', Courier, monospace;
+
 }
 
 img {
@@ -10,6 +20,30 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+
+  margin-bottom: 32px;
+}
+
+.titleflex {
+  display: flex;
+  justify-content: center;
+}
+
+.plants {
+  display: flex;
+  justify-content: space-around;
+  gap: 52px;
+
+}
+
+.plants>.plantitem {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.plants>.plantitem>.text {
+  text-align: center;
 }
 
 /* do not edit this footer */
